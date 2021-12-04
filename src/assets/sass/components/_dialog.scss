@@ -1,0 +1,7 @@
+.v-dialog:not(.v-dialog--fullscreen):not(.infoAlert) {
+    &.dialogalert {
+        top: 0 !important;
+        right: 0 !important;
+        position: absolute !important;
+    }
+}

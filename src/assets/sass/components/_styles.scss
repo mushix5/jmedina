@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+.titleApp {
+  letter-spacing: 1px;
+  color: black;
+}
+.subtitleApp {
+  letter-spacing: 2px;
+  color: black !important;
+  font-family: "M PLUS 1 Code", sans-serif;
+}
+.genericTitle {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: $xxlargesize !important;
+}
+.genericSubtitle {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: $smallsize !important;
+}
+.nombre {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: $xxlargesize !important;
+  padding: 10px 0px 10px 0px;
+  border-style: none none double none;
+}
+.genericTitleMovil {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: $xlargesize !important;
+}
+.genericSubtitleMovil {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: $smallsize !important;
+}
+.nombreMovil {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: $largesize !important;
+  padding: 10px 0px 10px 0px;
+  border-style: none none double none;
+  letter-spacing: 1px;
+}
+.infodata {
+  font-family: 'Roboto Mono', monospace !important;
+  font-weight: bold;
+  font-size: $mediumsize !important;
+  color: darkslateblue !important;
+}
+
+.estracto {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: $xsmallsize !important;
+  text-align: justify;
+  border-style: double none double none;
+  padding: 20px 0px 20px 0px;
+}
+
+.contenido {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $xsmallsize !important;
+  text-align: justify;
+}
+
+.tecnologia {
+  font-family: "M PLUS 1 Code", sans-serif;
+}
+
+.alerta {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: $xsmallsize !important;
+  text-align: justify;
+   color: white !important;
+}
