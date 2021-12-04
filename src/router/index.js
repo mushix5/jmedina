@@ -45,10 +45,21 @@ const routes = [
   },
 ]
 
+
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if(to.name === 'Home'){
+    next();
+  } else {
+    next({
+      name: "Home"
+    });
+  }
 })
 
 export default router
