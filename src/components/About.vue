@@ -39,6 +39,7 @@
                     tomando nuevas en el camino, he trabajado en modalidad home office y presencial con tecnologías como:
                 </div>
                 <div class="my-2 tecnologia">Node.js, Lambdas en AWS, JavaScript, Java, Vuejs, TypeScript, Mysql, Serverless, SQLServer y GitHub.</div>
+                <!-- <v-btn @click="compartir()">Test</v-btn> -->
             </v-card-text>
         </v-card>
     </v-dialog>
@@ -54,6 +55,26 @@ export default {
         isMobile() {
             return this.$vuetify.breakpoint.smAndDown;
         }
-    }
+    },
+    methods: {
+    compartir() {
+    // if (navigator.canShare && navigator.canShare({ files: filesArray })) {
+    //   navigator.share({
+    //     files: filesArray,
+    //     title: 'Vacation Pictures',
+    //     text: 'Photos from September 27 to October 14.',
+    //   })
+    //   .then(() => console.log('Share was successful.'))
+    //   .catch((error) => console.log('Sharing failed', error));
+    // } else {
+    //   console.log(`Your system doesn't support sharing files.`);
+    // }
+    if (navigator.share) {
+navigator.share({ title: "titulo", text: "texto", url: "URL" })
+}
+console.log('hola');
+return false;
+  }
+  },
 }
 </script>
