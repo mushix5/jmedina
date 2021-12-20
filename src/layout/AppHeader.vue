@@ -12,14 +12,19 @@
     </v-list-item>
 
     <v-spacer></v-spacer>
-        <v-row justify="center" align="center"  class="mr-3">
+        <v-row justify="center" align="center">
           <v-col v-for="(item, index) in contacto" :key="index" cols="2" class="text-center hidden-sm-and-down">
             <v-btn icon :color="item.color" :href="item.url" target="_blank">
             <v-icon>{{item.icono}}</v-icon>
           </v-btn>
           </v-col>
+          <v-col cols="2" class="text-center hidden-sm-and-down">
+          <v-btn icon color="blue" @click="compartir()">
+            <v-icon>mdi-share-variant-outline</v-icon>
+          </v-btn>
+          </v-col>
           <v-col cols="12" class="hidden-md-and-up">
-            <redes :redes="contacto"/>
+            <v-app-bar-nav-icon @click="mostrarDrawer()"></v-app-bar-nav-icon>
           </v-col>
         </v-row>
   </v-app-bar>
@@ -56,6 +61,17 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    mostrarDrawer(){
+      this.$emit('drawer', true);
+    },
+    compartir() {
+      if (navigator.share) {
+        navigator.share({ title: 'Jesús Medina Calderón', text: 'Te cuento acerca de mí', url: 'https://www.jmedina.com.mx' });
+      }
+      return false;
+    },
   }
 }
 </script>
